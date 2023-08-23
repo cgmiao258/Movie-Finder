@@ -1,0 +1,92 @@
+body {
+    background: #f5efef;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+
+  .about_me_text {
+    color: #444444;
+    font-size: 25px;
+    font-weight: normal;
+  }
+  
+  .indent {
+    color: #1a0202;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .bg-steel {
+    background-color: #1c8b86;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #0c0c0c;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #020202;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #050505;
+  }
+  
+  a.article-title:hover {
+    color: #0c5494;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #0a0a0a
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }

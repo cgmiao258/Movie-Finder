@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+  <h2 class="account-heading">{{ username }}</h2>
+  <p class="text-secondary"><strong>{{ email }}</strong></p>
+  <p class="text-secondary"><strong>{{ timesloggedin }} visits to this website</strong></p>
+</div>
+
+
+<div class="content-section">
+  <form method="POST" action="">
+      {{ form.hidden_tag() }}
+      <fieldset class="form-group">
+          
+          <div class="form-check">
+            {{ form.deletebutton(class="form-check-input") }}
+            <strong>{{ form.deletebutton.label(class="form-check-label") }}</strong>
+          </div>
+      </fieldset>
+      <div class="form-group">
+          {{ form.submit(class="btn btn-outline-info") }}
+      </div>
+  </form>
+</div>
+{% endblock %}
+
+

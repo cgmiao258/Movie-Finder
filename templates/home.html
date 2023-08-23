@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>
+      Recommendations
+    </h1>
+    {% for x in data%}
+        <article class="media content-section">
+            <div class="media-body">
+              <div class="article-metadata">
+                <a class="mr-2"><strong>Title: </strong>{{ x.moviename }}</a>
+                <small class="text-muted"><strong>Genres: </strong>{{ x.genres }}</small>
+              </div>
+              <p class="article-content"><strong>Rating: </strong>{{ x.rating }}</p>
+              <p class="article-content"><strong>Number of Votes: </strong>{{ x.num_votes }}</p>
+              <p class="article-content"><strong>Directors: </strong>{{ x.directors }}</p>
+              <p class="article-content"><strong>Writers: </strong>{{ x.writers }}</p>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock %}
+

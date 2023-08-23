@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>
+    Results
+  </h1>
+  {% if person %}
+    {% for x in data%}
+        <article class="media content-section">
+            <div class="media-body">
+              <div class="article-metadata">
+                <a class="mr-2"><strong>Name: </strong>{{ x.personname }}</a>
+                <small class="text-muted"><strong>Birthyear: </strong>{{ x.birthyear }}, <strong>Deathyear: </strong>{{ x.deathyear }}</small>
+              </div>
+              <p class="article-content"><strong>Profession(s): </strong>{{ x.profession }}</p>
+              <p class="article-content"><strong>Knownfor:</strong>{% for y in x.knownfor%}
+                    <div class = "indent">Movie name: {{y}}</div>
+                    {% endfor %} 
+                </p>
+            </div>
+        </article>
+    {% endfor %}
+  {% elif show %}
+    {% for x in data%}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2"><strong>Name: </strong>{{ x.moviename }}</a>
+              <small class="text-muted"><strong>Genres: </strong>{{ x.genres }}</small>
+            </div>
+            <p class="article-content"><strong>Rating: </strong>{{ x.rating }}, <strong>Number of Votes: </strong>{{ x.num_votes }}</p>
+            <p class="article-content"> <strong>Directors: </strong>{{ x.directors }}
+            <p class="article-content"> <strong>Writers: </strong>{{ x.writers }}
+          </div>
+      </article>
+    {% endfor %}
+  {% endif %}
+{% endblock %}
