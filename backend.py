@@ -12,7 +12,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'f5a98f86109a27d16d08d2f0eaca8549'
+app.config['SECRET_KEY'] = 'fake'
 
 isloggedin = False
 def isloggedinfunc(x):
